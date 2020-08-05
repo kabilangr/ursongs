@@ -1,0 +1,27 @@
+.searchbar {
+  display: flex;
+  justify-content: center;
+}
+
+.bar {
+  width: 300px;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 1.5em;
+  border: transparent;
+}
+
+.btn {
+  width: 40px;
+  border-radius: 2em;
+  border: transparent;
+  background: #3498db;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.bar:hover {
+  cursor: text;
+}

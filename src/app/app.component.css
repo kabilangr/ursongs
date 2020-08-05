@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 0;
+  margin: 0;
+  background: url(../assets/images.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh -80px);
+}
+
+.length {
+  height: 120vh;
+}
