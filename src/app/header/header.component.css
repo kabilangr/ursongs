@@ -10,7 +10,7 @@
 }
 
 nav {
-  background: #1B1464;
+  background: #222f3e;
   height: 80px;
   width: 100%;
 }
@@ -41,13 +41,13 @@ a {
   font-size: large;
   padding: 1em;
   color: #ecf0f1;
-  background-color: #0652DD;
+  background-color: #222f3e;
   border-radius: 1em;
   font-family: 'Nunito', sans-serif;
 }
 
 a:hover {
-  background: #3498db;
+  background: #576574;
   transition: 0.5s;
 }
 
