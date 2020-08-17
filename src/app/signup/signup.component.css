@@ -1,0 +1,45 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+h2 {
+  font-size: larger;
+  color: rgb(11, 70, 160);
+  text-align: center;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 510px;
+
+}
+
+.example {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1076px) {
+  .example-form {
+    min-width: 100px;
+    max-width: 200px;
+  }
+
+  button {
+    align-self: center;
+  }
+}

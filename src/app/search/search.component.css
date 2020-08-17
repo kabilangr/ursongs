@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 .searchbar {
   display: flex;
   justify-content: center;
@@ -11,8 +13,13 @@
   border: transparent;
 }
 
+.extra {
+  height: 400px;
+}
+
 .btn {
-  width: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 2em;
   border: transparent;
   background: #3498db;
@@ -24,4 +31,72 @@
 
 .bar:hover {
   cursor: text;
+}
+
+.example-card {
+  max-width: 167.5px;
+  max-height: 245px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.images {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+
+}
+
+.example-card:hover {
+  transition: 0.5s;
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+
+.order {
+  margin: 0 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-column-gap: 6px;
+  grid-row-gap: 50px;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  white-space: pre;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1076px) {
+  .example-card {
+    max-width: 68.5px;
+    max-height: 84px;
+  }
+
+  .images {
+    width: 100px;
+    height: 100px;
+  }
+
+  .order {
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+    grid-column-gap: 6px;
+    grid-row-gap: 30px;
+  }
+
+  .name {
+    display: none;
+  }
+
+  #d-last1 {
+    display: none;
+  }
 }

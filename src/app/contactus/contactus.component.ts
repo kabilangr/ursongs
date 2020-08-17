@@ -5,4 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './contactus.component.html',
   styleUrls: ['./contactus.component.css'],
 })
-export class ContactusComponent {}
+export class ContactusComponent {
+  constructor() {}
+
+  ngOnInit(): void {}
+}

@@ -6,6 +6,13 @@
 }
 
 
+h1 {
+  font-size: 3em;
+  color: #16a085;
+  font-family: 'Indie Flower', cursive;
+  padding: 0 10px;
+}
+
 .images {
   width: 200px;
   height: 200px;
@@ -40,13 +47,18 @@ a {
 
 @media (max-width: 1076px) {
   .example-card {
-    max-width: 68.5px;
-    max-height: 84px;
+    max-width: 110px;
+    max-height: 90px;
   }
 
   .images {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+    align-self: center;
+  }
+
+  .name {
+    font-size: xx-small;
   }
 
   .order {
@@ -54,14 +66,11 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
     grid-column-gap: 6px;
-    grid-row-gap: 30px;
+    grid-row-gap: 40px;
   }
 
-  .name {
-    display: none;
-  }
 
-  #d-last1 {
-    display: none;
+  h1 {
+    font-size: 2.3em;
   }
 }

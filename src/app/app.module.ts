@@ -12,6 +12,10 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { SignupComponent } from './signup/signup.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { SearchlistService } from './service/searchlist.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,8 +32,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     BrowserAnimationsModule,
     MatCardModule,
     MatFormFieldModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
-  providers: [],
+  providers: [SearchlistService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

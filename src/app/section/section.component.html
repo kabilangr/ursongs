@@ -1,63 +1,18 @@
-<h1>WE ROCK EVERY MOMENT</h1>
 <h2 style="text-align: center;">Top Songs</h2>
+<div class="text-center">
+  <p class="lead" *ngIf="loading" style="text-align: center; font-weight: 800;">Loading...</p>
+</div>
 <div class="order">
-  <div class="d">
-    <a href="#">
-      <mat-card class="example-card">
+  <div class="d" *ngFor="let item of s1">
+    <a href="{{ item.api_track }}">
+      <mat-card class="example-card" style="background: #dcdde0;">
         <mat-card-header class="name">
-          <mat-card-title>Shiba Inu </mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+          <mat-card-title style="font-size:small; text-align: center;">
+            {{shrinker(item.track)}} </mat-card-title>
+          <mat-card-subtitle style="font-size:small; text-align: center;"> {{ shrinker(item.album)}}
+          </mat-card-subtitle>
         </mat-card-header>
-        <img class="images" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          alt="Photo of a Shiba Inu">
-      </mat-card>
-    </a>
-  </div>
-  <div class="d">
-    <a href="#">
-      <mat-card class="example-card">
-        <mat-card-header class="name">
-          <mat-card-title>Shiba Inu </mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img class="images" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          alt="Photo of a Shiba Inu">
-      </mat-card>
-    </a>
-  </div>
-  <div class="d">
-    <a href="#">
-      <mat-card class="example-card">
-        <mat-card-header class="name">
-          <mat-card-title>Shiba Inu </mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img class="images" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          alt="Photo of a Shiba Inu">
-      </mat-card>
-    </a>
-  </div>
-  <div class="d">
-    <a href="#">
-      <mat-card class="example-card">
-        <mat-card-header class="name">
-          <mat-card-title>Shiba Inu </mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img class="images" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          alt="Photo of a Shiba Inu">
-      </mat-card>
-    </a>
-  </div>
-  <div class="d" id="d-last1">
-    <a href="#">
-      <mat-card class="example-card">
-        <mat-card-header class="name">
-          <mat-card-title>Shiba Inu </mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img class="images" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          alt="Photo of a Shiba Inu">
+        <img class="images" mat-card-image src="{{ item.cover }}" alt="{{shrinker(item.track)}}">
       </mat-card>
     </a>
   </div>
